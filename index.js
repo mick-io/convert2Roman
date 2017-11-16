@@ -4,10 +4,10 @@
  * @param input: number - Value to be converted to a Roman Numeral
  */
 exports.default = function (input) {
-  if (input < 0) {
-    throw new Error("Function must be called with positive number");
-  }
-  
+
+  /* Sanitizing Input. */
+  input = Math.round(Math.abs(input));
+
   /* Static Loop Variables */
   var romanNumerals = {
     M: 1000,
