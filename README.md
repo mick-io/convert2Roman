@@ -2,6 +2,7 @@
 
 Integer to roman numeral converter with type definitions files included.
 
+
 ## Getting Started
 
 ```javascript
@@ -20,6 +21,12 @@ Install via NPM
 or via Yarn
 
 `yarn add convert@Roman`
+
+### Links
+
+[Convert2Roman NPM Page](https://www.npmjs.com/package/convert2roman)
+
+[Convert2Roman GitHub Page](https://github.com/mpiereder/convert2Roman)
 
 ### Built With
 
