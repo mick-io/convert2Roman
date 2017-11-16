@@ -22,13 +22,14 @@ or via Yarn
 `yarn add convert@Roman`
 
 ### Built With
+
 [Node.js](https://nodejs.org)
 
 ### Authors
 
 [Mick Piereder](https://github.com/mpiereder) 
 
-License
+### License
 
 This project is licensed under the MIT License - see the LICENSE.md file for details
 
