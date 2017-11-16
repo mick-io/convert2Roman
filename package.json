@@ -1,0 +1,26 @@
+{
+  "name": "convert2roman",
+  "version": "0.1.0",
+  "description": "Integer to roman numeral converter with type definitions files included.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mpiereder/convert2Roman.git"
+  },
+  "keywords": [
+    "typescript",
+    "ts",
+    "roman",
+    "numeral",
+    "converter"
+  ],
+  "author": "Mick Piereder",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mpiereder/convert2Roman/issues"
+  },
+  "homepage": "https://github.com/mpiereder/convert2Roman#readme"
+}
