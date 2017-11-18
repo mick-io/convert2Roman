@@ -16,7 +16,7 @@ console.log(myRomanNumeral); // MMMCMXCIX
 
 Install via NPM
 
-`npm i convert2Roman`
+`npm i convert2Roman --save`
 
 or via Yarn
 
