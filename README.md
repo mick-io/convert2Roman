@@ -1,7 +1,6 @@
 # Convert2Roman
 
-Integer to roman numeral converter with type definitions files included.
-
+An integer to roman numeral converter with type definitions files included.
 
 ## Getting Started
 
@@ -26,7 +25,7 @@ or via Yarn
 
 [Convert2Roman NPM Page](https://www.npmjs.com/package/convert2roman)
 
-[Convert2Roman GitHub Page](https://github.com/mpiereder/convert2Roman)
+[Convert2Roman GitHub Page](https://github.com/mick-io/convert2Roman)
 
 ### Built With
 

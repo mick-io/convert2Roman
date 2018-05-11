@@ -1,24 +1,24 @@
 "use strict";
 
 /**
- * @param input: number - Value to be converted to a Roman Numeral
+ * Converts a integer to a roman numeral.
+ * @param {number} input the value to be converted to a Roman Numeral
+ * @returns {string} The input value in roman numerals.
  */
-function convert2Roman(input) {
+module.exports = function (input) {
+    var EMPTY_STRING = "";
+    var ZERO = 0;
 
-    /* Sanitizing Input. */
     if (typeof input !== "number") {
-        input = parseInt(input);
+        throw new Error("convert2Roman must be called with typeof 'number'");
     }
 
-    if (input == 0) {
-        return "";
-    } else if (!input) {
-        throw new Error("convert2Roman must be called with typeof 'number'");
+    if (input === ZERO) {
+        return EMPTY_STRING;
     }
 
     input = Math.round(Math.abs(input));
 
-    /* Static Loop Variables */
     var romanNumerals = {
         M: 1000,
         CM: 900,
@@ -34,24 +34,17 @@ function convert2Roman(input) {
         I: 1,
     };
     var romanCharacters = Object.keys(romanNumerals);
-
-    /* Dynamic Loop Variables */
-    var char = "";
+    var char = EMPTY_STRING;
     var num = 0;
+    var output = EMPTY_STRING;
 
-    /* Return Variable */
-    var output = "";
-
-    for (var i = 0; i <= romanCharacters.length; i++) {
+    for (var i = ZERO; i <= romanCharacters.length; i++) {
         char = romanCharacters[i];
         num = romanNumerals[romanCharacters[i]];
-        while (input - num >= 0) {
+        while (input - num >= ZERO) {
             output += char;
             input -= num;
         }
     }
-
     return output;
 };
-
-module.exports = convert2Roman;
