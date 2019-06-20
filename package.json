@@ -1,14 +1,14 @@
 {
   "name": "convert2roman",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Integer to roman numeral converter with type definitions files included.",
   "main": "index.js",
   "scripts": {
-    "test": "node index.test.js"
+    "test": "mocha index.test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mpiereder/convert2Roman.git"
+    "url": "https://github.com/mick-io/convert2Roman.git"
   },
   "keywords": [
     "typescript",
@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/mpiereder/convert2Roman/issues"
   },
-  "homepage": "https://github.com/mpiereder/convert2Roman#readme"
+  "homepage": "https://github.com/mpiereder/convert2Roman#readme",
+  "devDependencies": {
+    "mocha": "^6.1.4"
+  }
 }
