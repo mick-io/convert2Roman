@@ -17,6 +17,7 @@ var romanNumerals = Object.keys(conversionsTable);
 /**
  * Converts a base 10 integer into  it's equivalent roman numeral.
  * @param {number} int An integer greater than 0 that will be converted to a Roman Numeral.
+ * @throws {Error} An error is thrown if the input is not of type "number", the input is not an whole number, or the input is less than 1.
  * @returns {string} The roman numeral representation of the input integer.
  */
 module.exports = function(int) {
