@@ -34,7 +34,7 @@ or via Yarn
 
 ### Authors
 
-[Mick Piereder](https://github.com/mpiereder)
+[Mick Piereder](https://github.com/mick-io)
 
 ### License
 
