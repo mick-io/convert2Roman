@@ -7,7 +7,7 @@ An integer to roman numeral converter with type definitions files included.
 ```javascript
 const convert2Roman = require(convert2Roman);
 
-// For use with a integers > 0
+// For use with integers > 0
 const myRomanNumeral = convert2Roman(3999);
 console.log(myRomanNumeral); // MMMCMXCIX
 ```
