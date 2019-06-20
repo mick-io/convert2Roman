@@ -6,13 +6,14 @@
  * @returns {string} The input value in roman numerals.
  */
 module.exports = function(input) {
-  if (typeof input !== "number") {
-    throw new Error("convert2Roman must be called with typeof 'number'");
+  // if input is not an positive integer...
+  if (typeof input !== "number" || input % 1 !== 0 || input < 0) {
+    throw new Error("convert2Roman must be called with an positive integer");
   }
-  if (input === ZERO) {
+  // if zero...
+  if (input === 0) {
     return "";
   }
-  input = Math.round(Math.abs(input));
   var conversions = {
     M: 1000,
     CM: 900,
