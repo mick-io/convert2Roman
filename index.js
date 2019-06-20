@@ -7,12 +7,8 @@
  */
 module.exports = function(input) {
   // if input is not an positive integer...
-  if (typeof input !== "number" || input % 1 !== 0 || input < 0) {
+  if (typeof input !== "number" || input % 1 !== 0 || input < 1) {
     throw new Error("convert2Roman must be called with an positive integer");
-  }
-  // if zero...
-  if (input === 0) {
-    return "";
   }
   var conversions = {
     M: 1000,
