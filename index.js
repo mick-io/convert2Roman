@@ -1,39 +1,38 @@
-"use strict";
+var conversionsTable = {
+  M: 1000,
+  CM: 900,
+  D: 500,
+  C: 100,
+  XC: 90,
+  L: 50,
+  XL: 40,
+  X: 10,
+  IX: 9,
+  V: 5,
+  IV: 4,
+  I: 1
+};
+var romanNumerals = Object.keys(conversionsTable);
 
 /**
- * Converts a integer to a roman numeral.
- * @param {number} input the value to be converted to a Roman Numeral
- * @returns {string} The input value in roman numerals.
+ * Converts a base 10 integer into  it's equivalent roman numeral.
+ * @param {number} int An integer greater than 0 that will be converted to a Roman Numeral.
+ * @returns {string} The roman numeral representation of the input integer.
  */
-module.exports = function(input) {
-  // if input is not an positive integer...
-  if (typeof input !== "number" || input % 1 !== 0 || input < 1) {
+module.exports = function(int) {
+  // if int is not of type number, not an integer, or is less than 1
+  if (typeof int !== "number" || int % 1 !== 0 || int < 1) {
     throw new Error("convert2Roman must be called with an positive integer");
   }
-  var conversions = {
-    M: 1000,
-    CM: 900,
-    D: 500,
-    C: 100,
-    XC: 90,
-    L: 50,
-    XL: 40,
-    X: 10,
-    IX: 9,
-    V: 5,
-    IV: 4,
-    I: 1
-  };
-  var romanNums = Object.keys(conversions);
-  var num = 0;
+  var n = 0;
   var char = "";
   var output = "";
-  for (var i = 0; i <= romanNums.length; i++) {
-    char = romanNums[i];
-    num = conversions[romanNums[i]];
-    while (input - num >= 0) {
+  for (var i = 0, len = romanNumerals.length; i <= len; i++) {
+    char = romanNumerals[i];
+    n = conversionsTable[char];
+    while (int - n >= 0) {
       output += char;
-      input -= num;
+      int -= n;
     }
   }
   return output;
