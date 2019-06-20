@@ -1,0 +1,9 @@
+/.vscode/
+/.idea/
+.editorconfig
+.gitignore
+
+.DS_Store
+index.test.js
+README.md
+
