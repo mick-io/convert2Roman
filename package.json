@@ -1,6 +1,6 @@
 {
   "name": "convert2roman",
-  "version": "0.1.6",
+  "version": "1.0.1",
   "description": "Integer to roman numeral converter with type definitions files included.",
   "main": "index.js",
   "scripts": {
