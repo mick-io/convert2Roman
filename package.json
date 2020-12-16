@@ -1,6 +1,13 @@
 {
   "name": "convert2roman",
-  "version": "1.1.0",
+  "version": "1.1.1",
+  "maintainers": [
+    {
+      "email": "mick.io@pm.me",
+      "name": "Mick Piereder",
+      "url": "https://github.com/mick-io"
+    }
+  ],
   "description": "Integer to roman numeral converter with type definitions files included.",
   "main": "index.js",
   "scripts": {
