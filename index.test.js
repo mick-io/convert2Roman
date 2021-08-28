@@ -6,19 +6,39 @@ const it = require("mocha").it;
 const ERROR_MSG = "convert2Roman must be called with an positive integer";
 
 describe("convert2Roman", function() {
-  it("should throw an error if not called with 'typeof number'", function() {
+  it("should throw an error if not called with typeof 'number'", function() {
+    try {
+      convert2Roman(true);
+    } catch (err) {
+      assert.equal(err.message, ERROR_MSG);
+    }
+
     try {
       convert2Roman("throw an error!");
     } catch (err) {
       assert.equal(err.message, ERROR_MSG);
     }
+
+    try {
+      convert2Roman(undefined);
+    } catch (err) {
+      assert.equal(err.message, ERROR_MSG);
+    }
+
+    try {
+      convert2Roman(null);
+    } catch (err) {
+      assert.equal(err.message, ERROR_MSG);
+    }
+
     try {
       convert2Roman({});
     } catch (err) {
       assert.equal(err.message, ERROR_MSG);
     }
+
     try {
-      convert2Roman(true);
+      convert2Roman([]);
     } catch (err) {
       assert.equal(err.message, ERROR_MSG);
     }
@@ -27,6 +47,14 @@ describe("convert2Roman", function() {
   it("should throw an error if called with a floating point number", function() {
     try {
       convert2Roman(81.232);
+    } catch (err) {
+      assert.equal(err.message, ERROR_MSG);
+    }
+  });
+
+  it("should throw an error if called with 0", function() {
+    try {
+      convert2Roman(0);
     } catch (err) {
       assert.equal(err.message, ERROR_MSG);
     }
@@ -55,6 +83,7 @@ describe("convert2Roman", function() {
     assert.equal(convert2Roman(83), "LXXXIII");
     assert.equal(convert2Roman(97), "XCVII");
     assert.equal(convert2Roman(99), "XCIX");
+    assert.equal(convert2Roman(400), "CD");
     assert.equal(convert2Roman(500), "D");
     assert.equal(convert2Roman(501), "DI");
     assert.equal(convert2Roman(649), "DCXLIX");
