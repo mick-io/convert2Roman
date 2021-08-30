@@ -16,10 +16,16 @@ const table = new Map([
 
 /**
  * Converts a base 10 integer into  it's equivalent roman numeral.
- * @param {number} int An integer greater than 0 that will be converted to a Roman Numeral.
+ *
+ * @param {number} int An integer greater than 0 that will be converted to a
+ * Roman Numeral.
  * @returns {string} The roman numeral representation of the input integer.
  * @throws {Error} An error is thrown if the input is not of type "number", the
- *  input is not an whole number, or the input is less than 1.
+ * input is not an whole number, or the input is less than 1.
+ * @example ```js
+ * const myRomanNumeral = convert2Roman(3999);
+ * console.log(myRomanNumeral); // MMMCMXCIX
+ * ```
  */
 module.exports = function(int) {
   // if int is not of type number, not an integer, or is less than 1
