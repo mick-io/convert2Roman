@@ -1,5 +1,7 @@
 # Convert2Roman
 
+**THIS PACKAGE IS NO LONGER MAINTAINED.** Considered using [romanize-n](http://github.com/mick-io/romanize-n).
+
 An integer to roman numeral converter with type definitions files included.
 
 ## Getting Started
