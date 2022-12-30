@@ -31,6 +31,6 @@
   },
   "homepage": "https://github.com/mpiereder/convert2Roman#readme",
   "devDependencies": {
-    "mocha": "^6.2.0"
+    "mocha": "^10.2.0"
   }
 }
